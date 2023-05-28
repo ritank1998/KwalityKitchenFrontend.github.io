@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kwality Kitchen Weekly-Meal-Plan</title>
+    <link rel="stylesheet" href="ALTstyleWeeklyPlanner.css">
+  </head>
+  <script src="scriptindex.js"></script>
+  <body>
+    <div class="header">
+      <img src="assets/img/logosidrez.jpg" alt="Weekly Plan Icon">
+      <h1>Customize Your Monthly Plan</h1>
+    </div>
+    <form>
+      <div class = "days-container">
+        <div class = "days-column">
+      <label class = 'accent-color' for="Day 1">Day 1</label>
+      <select id="day_month" name="sunday">
+        <option selected>None</option>
+        <option value="1">Paneer Thali</option>
+        <option value="2">Mini Meal</ption>
+        <option value="3">South Indian Food</option>
+        <option value="4">Punjabi Food</option>
+      </select>
+      <button onclick="customize_1()">Customize</button>
+        </div>
+          <div class = "days-column">
+      <label for="Day 2">Day 2</label>
+      <select id="day_month1" name="monday">
+        <option selected>None</option>
+        <option value="1">Paneer Thali</option>
+        <option value="2">Mini Meal</ption>
+        <option value="3">South Indian Food</option>
+        <option value="4">Punjabi Food</option>
+      </select>
+      <button onclick="customize_2()">Customize</button>
+        </div></div>
+        <div class = "days-container">
+            <div class = "days-column">
+          <label class = 'accent-color' for="Day 3">Day 3</label>
+          <select id="day_month2" name="sunday">
+            <option selected>None</option>
+            <option value="1">Paneer Thali</option>
+            <option value="2">Mini Meal</ption>
+            <option value="3">South Indian Food</option>
+            <option value="4">Punjabi Food</option>
+          </select>
+          <button onclick="customize_3()">Customize</button>
+            </div>
+              <div class = "days-column">
+          <label for="Day 4">Day 4</label>
+          <select id="day_month3" name="monday">
+            <option selected>None</option>
+            <option value="1">Paneer Thali</option>
+            <option value="2">Mini Meal</ption>
+            <option value="3">South Indian Food</option>
+            <option value="4">Punjabi Food</option>
+          </select>
+          <button onclick="customize_4()">Customize</button>
+            </div></div>
+            <div class = "days-container">
+                <div class = "days-column">
+              <label class = 'accent-color' for="Day 5">Day 5</label>
+              <select id="day_month4" name="sunday">
+                <option selected>None</option>
+                <option value="1">Paneer Thali</option>
+                <option value="2">Mini Meal</ption>
+                <option value="3">South Indian Food</option>
+                <option value="4">Punjabi Food</option>
+              </select>
+              <button onclick="customize_5()">Customize</button>
+                </div>
+                  <div class = "days-column">
+              <label for="Day 6">Day 6</label>
+              <select id="day_month5" name="monday">
+                <option selected>None</option>
+                <option value="1">Paneer Thali</option>
+                <option value="2">Mini Meal</ption>
+                <option value="3">South Indian Food</option>
+                <option value="4">Punjabi Food</option>
+              </select>
+              <button onclick="customize_6()">Customize</button>
+                </div></div>
+                <div class = "days-container">
+                    <div class = "days-column">
+                  <label class = 'accent-color' for="Day 7">Day 7</label>
+                  <select id="day_month6" name="sunday">
+                    <option selected>None</option>
+                    <option value="1">Paneer Thali</option>
+                    <option value="2">Mini Meal</ption>
+                    <option value="3">South Indian Food</option>
+                    <option value="4">Punjabi Food</option>
+                  </select>
+                  <button onclick="customize_7()">Customize</button>
+                    </div>
+                      <div class = "days-column">
+                  <label for="Day 8">Day 8</label>
+                  <select id="day_month7" name="monday">
+                    <option selected>None</option>
+                    <option value="1">Paneer Thali</option>
+                    <option value="2">Mini Meal</ption>
+                    <option value="3">South Indian Food</option>
+                    <option value="4">Punjabi Food</option>
+                  </select>
+                  <button onclick="customize_8()">Customize</button>
+                    </div></div>                    
+                    <div class = "days-container">
+                        <div class = "days-column">
+                      <label class = 'accent-color' for="Day 9">Day 9</label>
+                      <select id="day_month8" name="sunday">
+                        <option selected>None</option>
+                        <option value="1">Paneer Thali</option>
+                        <option value="2">Mini Meal</ption>
+                        <option value="3">South Indian Food</option>
+                        <option value="4">Punjabi Food</option>
+                      </select>
+                      <button onclick="customize_9()">Customize</button>
+                        </div>
+                          <div class = "days-column">
+                      <label for="Day 10">Day 10</label>
+                      <select id="day_month9" name="monday">
+                        <option selected>None</option>
+                        <option value="1">Paneer Thali</option>
+                        <option value="2">Mini Meal</ption>
+                        <option value="3">South Indian Food</option>
+                        <option value="4">Punjabi Food</option>
+                      </select>
+                      <button onclick="customize_10()">Customize</button>
+                        </div></div>
+                        <div class = "days-container">
+                            <div class = "days-column">
+                          <label class = 'accent-color' for="Day 11">Day 11</label>
+                          <select id="day_month10" name="sunday">
+                            <option selected>None</option>
+                            <option value="1">Paneer Thali</option>
+                            <option value="2">Mini Meal</ption>
+                            <option value="3">South Indian Food</option>
+                            <option value="4">Punjabi Food</option>
+                          </select>
+                          <button onclick="customize_11()">Customize</button>
+                            </div>
+                              <div class = "days-column">
+                          <label for="Day 12">Day 12</label>
+                          <select id="day_month11" name="monday">
+                            <option selected>None</option>
+                            <option value="1">Paneer Thali</option>
+                            <option value="2">Mini Meal</ption>
+                            <option value="3">South Indian Food</option>
+                            <option value="4">Punjabi Food</option>
+                          </select>
+                          <button onclick="customize_12()">Customize</button>
+                            </div></div>
+                            <div class = "days-container">
+                                <div class = "days-column">
+                              <label class = 'accent-color' for="Day 13">Day 13</label>
+                              <select id="day_month12" name="sunday">
+                                <option selected>None</option>
+                                <option value="1">Paneer Thali</option>
+                                <option value="2">Mini Meal</ption>
+                                <option value="3">South Indian Food</option>
+                                <option value="4">Punjabi Food</option>
+                              </select>
+                              <button onclick="customize_13()">Customize</button>
+                                </div>
+                                  <div class = "days-column">
+                              <label for="Day 14">Day 14</label>
+                              <select id="day_month13" name="monday">
+                                <option selected>None</option>
+                                <option value="1">Paneer Thali</option>
+                                <option value="2">Mini Meal</ption>
+                                <option value="3">South Indian Food</option>
+                                <option value="4">Punjabi Food</option>
+                              </select>
+                              <button onclick="customize_14()">Customize</button>
+                                </div></div>
+                                <div class = "days-container">
+                                    <div class = "days-column">
+                                  <label class = 'accent-color' for="Day 15">Day 15</label>
+                                  <select id="day_month14" name="sunday">
+                                    <option selected>None</option>
+                                    <option value="1">Paneer Thali</option>
+                                    <option value="2">Mini Meal</ption>
+                                    <option value="3">South Indian Food</option>
+                                    <option value="4">Punjabi Food</option>
+                                  </select>
+                                  <button onclick="customize_15()">Customize</button>
+                                    </div>
+                                      <div class = "days-column">
+                                  <label for="Day 16">Day 16</label>
+                                  <select id="day_month15" name="monday">
+                                    <option selected>None</option>
+                                    <option value="1">Paneer Thali</option>
+                                    <option value="2">Mini Meal</ption>
+                                    <option value="3">South Indian Food</option>
+                                    <option value="4">Punjabi Food</option>
+                                  </select>
+                                  <button onclick="customize_16()">Customize</button>
+                                    </div></div>
+                                    <div class = "days-container">
+                                        <div class = "days-column">
+                                      <label class = 'accent-color' for="Day 17">Day 17</label>
+                                      <select id="day_month16" name="sunday">
+                                        <option selected>None</option>
+                                        <option value="1">Paneer Thali</option>
+                                        <option value="2">Mini Meal</ption>
+                                        <option value="3">South Indian Food</option>
+                                        <option value="4">Punjabi Food</option>
+                                      </select>
+                                      <button onclick="customize_17()">Customize</button>
+                                        </div>
+                                          <div class = "days-column">
+                                      <label for="Day 18">Day 18</label>
+                                      <select id="day_month17" name="monday">
+                                        <option selected>None</option>
+                                        <option value="1">Paneer Thali</option>
+                                        <option value="2">Mini Meal</ption>
+                                        <option value="3">South Indian Food</option>
+                                        <option value="4">Punjabi Food</option>
+                                      </select>
+                                      <button onclick="customize_18()">Customize</button>
+                                        </div></div>
+                                        <div class = "days-container">
+                                            <div class = "days-column">
+                                          <label class = 'accent-color' for="Day 19">Day 19</label>
+                                          <select id="day_month18" name="sunday">
+                                            <option selected>None</option>
+                                            <option value="1">Paneer Thali</option>
+                                            <option value="2">Mini Meal</ption>
+                                            <option value="3">South Indian Food</option>
+                                            <option value="4">Punjabi Food</option>
+                                          </select>
+                                          <button onclick="customize_19()">Customize</button>
+                                            </div>
+                                              <div class = "days-column">
+                                          <label for="Day 20">Day 20</label>
+                                          <select id="day_month19" name="monday">
+                                            <option selected>None</option>
+                                            <option value="1">Paneer Thali</option>
+                                            <option value="2">Mini Meal</ption>
+                                            <option value="3">South Indian Food</option>
+                                            <option value="4">Punjabi Food</option>
+                                          </select>
+                                          <button onclick="customize_20()">Customize</button>
+                                            </div></div>
+                                            <div class = "days-container">
+                                                <div class = "days-column">
+                                              <label class = 'accent-color' for="Day 21">Day 21</label>
+                                              <select id="day_month20" name="sunday">
+                                                <option selected>None</option>
+                                                <option value="1">Paneer Thali</option>
+                                                <option value="2">Mini Meal</ption>
+                                                <option value="3">South Indian Food</option>
+                                                <option value="4">Punjabi Food</option>
+                                              </select>
+                                              <button onclick="customize_21()">Customize</button>
+                                                </div>
+                                                  <div class = "days-column">
+                                              <label for="Day 22">Day 22</label>
+                                              <select id="day_month21" name="monday">
+                                                <option selected>None</option>
+                                                <option value="1">Paneer Thali</option>
+                                                <option value="2">Mini Meal</ption>
+                                                <option value="3">South Indian Food</option>
+                                                <option value="4">Punjabi Food</option>
+                                              </select>
+                                              <button onclick="customize_22()">Customize</button>
+                                                </div></div>
+                                                <div class = "days-container">
+                                                    <div class = "days-column">
+                                                  <label class = 'accent-color' for="Day 23">Day 23</label>
+                                                  <select id="day_month22" name="sunday">
+                                                    <option selected>None</option>
+                                                    <option value="1">Paneer Thali</option>
+                                                    <option value="2">Mini Meal</ption>
+                                                    <option value="3">South Indian Food</option>
+                                                    <option value="4">Punjabi Food</option>
+                                                  </select>
+                                                  <button onclick="customize_23()">Customize</button>
+                                                    </div>
+                                                      <div class = "days-column">
+                                                  <label for="Day 24">Day 24</label>
+                                                  <select id="day_month23" name="monday">
+                                                    <option selected>None</option>
+                                                    <option value="1">Paneer Thali</option>
+                                                    <option value="2">Mini Meal</ption>
+                                                    <option value="3">South Indian Food</option>
+                                                    <option value="4">Punjabi Food</option>
+                                                  </select>
+                                                  <button onclick="customize_24()">Customize</button>
+                                                    </div></div>
+                                                                                                                                                                                                                                                
+      <div class = "days-container">
+          <div class = "days-column">
+      <label for="Day 25">Day 25</label>
+      <select id="day_monthy24" name="tuesday">
+        <option selected>None</option>
+        <option value="1">Paneer Thali</option>
+        <option value="2">Mini Meal</ption>
+        <option value="3">South Indian Food</option>
+        <option value="4">Punjabi Food</option>
+      </select>
+      <button onclick="customize_25()">Customize</button>
+      </div>
+        <div class = "days-column">
+      <label for="Day 26">Day 26</label>
+      <select id="day_month25" name="wednesday">
+        <option selected>None</option>
+        <option value="1">Paneer Thali</option>
+        <option value="2">Mini Meal</ption>
+        <option value="3">South Indian Food</option>
+        <option value="4">Punjabi Food</option>
+      </select>
+      <button onclick="customize_26()">Customize</button>
+      </div></div>
+      <div class = "days-container">
+        <div class = "days-column">
+    <label for="Day 27">Day 27</label>
+    <select id="day_monthy26" name="tuesday">
+      <option selected>None</option>
+      <option value="1">Paneer Thali</option>
+      <option value="2">Mini Meal</ption>
+      <option value="3">South Indian Food</option>
+      <option value="4">Punjabi Food</option>
+    </select>
+    <button onclick="customize_27()">Customize</button>
+    </div>
+      <div class = "days-column">
+    <label for="Day 28">Day 28</label>
+    <select id="day_month27" name="wednesday">
+      <option selected>None</option>
+      <option value="1">Paneer Thali</option>
+      <option value="2">Mini Meal</ption>
+      <option value="3">South Indian Food</option>
+      <option value="4">Punjabi Food</option>
+    </select>
+    <button onclick="customize_28()">Customize</button>
+    </div></div>
+      <div class = "days-container">
+        <div class = "days-column">
+      <label for="Day 29">Day 29</label>
+      <select id="day_month28" name="thursday">
+        <option selected>None</option>
+        <option value="1">Paneer Thali</option>
+        <option value="2">Mini Meal</ption>
+        <option value="3">South Indian Food</option>
+        <option value="4">Punjabi Food</option>
+      </select>
+      <button onclick="customize_29()">Customize</button>
+      
+    </div>
+      <div class = "days-column">
+      <label for="Day 30">Day 30</label>
+      <select id="day_month29" name="friday">
+        <option selected>None</option>
+        <option value="1">Paneer Thali</option>
+        <option value="2">Mini Meal</ption>
+        <option value="3">South Indian Food</option>
+        <option value="4">Punjabi Food</option>
+      </select>
+      <button onclick="customize_30()">Customize</button>
+      </div></div>
+      <div class = "days-container">
+        <div class = "days-column">
+      <label for="Day 31">Day 31</label>
+      <select id="day_month30" name="saturday">
+        <option selected>None</option>
+        <option value="1">Paneer Thali</option>
+        <option value="2">Mini Meal</ption>
+        <option value="3">South Indian Food</option>
+        <option value="4">Punjabi Food</option>
+      </select>
+      <button onclick="customize_31()">Customize</button>
+      
+      </div></div>
+     
+    
+      <button type="submit">Add</button>
+      <!-- <button type="reset">Reset</button> -->
+    </form>
+  </body>
+  
+  <script src="/assets/js/index.js"></script>
+</html>

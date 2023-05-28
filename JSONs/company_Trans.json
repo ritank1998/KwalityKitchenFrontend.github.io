@@ -1,0 +1,8 @@
+{
+    "Company Transaction" : {
+        "transaction_id" : "",
+        "transaction_amount" : "",
+        "transaction_date" : "",
+        "transaction_status" : ""
+    }
+}

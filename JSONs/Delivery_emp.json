@@ -1,0 +1,8 @@
+{
+    "Delivery Employee" : {
+        "employee_id" : "",
+        "employee_address" : "",
+        "employee_name" : "",
+        "employee_phone" : ""
+    }
+}

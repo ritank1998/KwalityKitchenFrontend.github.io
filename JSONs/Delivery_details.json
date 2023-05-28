@@ -1,0 +1,9 @@
+{
+    "Delivery Details" : {
+        "delivery_id" : "",
+        "delivery_date" : "",
+        "employee_id" : "",
+        "product_id" : "",
+        "scheduled_time" : ""
+    }
+}

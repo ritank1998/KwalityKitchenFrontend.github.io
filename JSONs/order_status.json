@@ -1,0 +1,9 @@
+{
+    "Order Status" : {
+        "state": [
+            "Transaction Failed",
+            "Transaction Successful",
+            "Transaction Pending"
+        ]        
+    }
+}

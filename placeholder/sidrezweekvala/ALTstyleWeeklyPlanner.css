@@ -1,0 +1,145 @@
+/* Set background color */
+body {
+  background-color: hsl(40, 42.9%, 95.9%);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Accent color */
+.accent-color {
+  color: hsl(31.9, 100%, 59%);
+  font-weight: bold;
+}
+
+/* Import Rubik and Shadows Into Light fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Shadows+Into+Light&display=swap');
+
+/* Style for the header section */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 500px;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 40px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.days-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.days-column {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid hsl(31.9, 100%, 59%);
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  width: calc(50% - 20px); /* adjust the width of each column */
+  box-sizing: border-box;
+}
+/* Style for the form */
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style for select dropdowns */
+select {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+/* Style for submit and reset buttons */
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background-color: hsl(31.9, 100%, 59%);;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: hsl(31.9, 100%, 59%);;
+  border: 1px solid hsl(31.9, 100%, 59%);;
+}
+
+button[type="reset"] {
+  display: block;
+  margin: 0 auto;
+  background-color: hsl(31.9, 100%, 59%);;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="reset"]:hover {
+  background-color: #fff;
+  color: hsl(31.9, 100%, 59%);;
+  border: 1px solid hsl(31.9, 100%, 59%);;
+}
+
+
+/* Center the buttons */
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the square icon */
+.icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url('YOUR-IMAGE-URL');
+  background-size: cover;
+  margin-right: 10px;
+}
+
+/* Style for the "Select Your Weekly Plan" text */
+.select-text {
+  display: inline-block;
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  font-family: 'Shadows Into Light', cursive;
+}

@@ -1,0 +1,9 @@
+{
+    "Customer" : {
+        "uuid" : "uuid",
+        "username" : "",
+        "email" : "",
+        "contact" : "",
+        "address" : ""
+    }
+}

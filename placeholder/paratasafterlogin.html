@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwality kitchen</title>
+</head>
+
+<!-- css file -->
+<link rel="stylesheet" href="cartstyle.css">
+
+ <!-- font awesome icon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <nav>
+        <div class="nav-responsive">
+            <img src="/images/logosidrez.jpg" alt="image" class="logo" id="logo">
+            <button type = "button" class = "menu-btn active-btn" id = "featured" onclick="window.location.href='indexlogin.html';">Login to Order</button>
+            <div class="access">
+                <a href="#" id="notification"><i class="fa fa-bell"></i></a>
+                <a href="#" id="cart"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#" id="bars"><i class="fa fa-bars"></i></a>
+                <a href="#" id="account"><i class="fa fa-user-circle-o"></i></a>
+            </div>
+        </div>      
+    </nav>
+
+<!-- main section -->
+<main id="main" >
+<!-- all categories -->
+<!-- <section class="weekly_meal">
+    <div class="weekplanner">
+        <h1 id="title">Weekly Planner <button href="menucard.html">Select Your Weekly Plan Here</button></h1>
+        <button class="btn btn-hover" onclick="window.location.herf= 'cartindex.html';">Order Now</button>
+    </div>
+</section>-->
+<section class="categories">
+    <div class="title-container">
+        <h1 id="title">Parathas</h1>
+       
+    </div>
+    <div class="card">
+        <div class="item-container" id="0">
+            <div class="card-item">
+                <img src="images/Aloo-paratha-with-curd-10748-pixahive-1024x759.jpg" alt="img" id="card-img">
+                <p id="item-name">Aloo Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;45 (1-Piece)</h3>
+            <button onclick="addDish('half')">Add Half Plate Dish</button>
+            <h3 id="item-price">Price : &#x20b9;90 (2-Piece)</h3>
+            <button onclick="addDish('full')">Add full Plate Dish</button>
+               
+        </div>
+            <div class="item-container" id="1">
+            <div class="card-item" >
+                <img src="images/onion paratha.jpg" alt="img" id="card-img">
+                <p id="item-name">Onion Parata</p>              
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;45 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;90 (2-Piece)</h3>
+        </div>
+            <div class="item-container" id="2">
+            <div class="card-item" >
+                <img src="images/paneer paratha.jpg" alt="img" id="card-img">
+                <p id="item-name">Panneer Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;60 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;120 (2-Piece)</h3>                
+        </div>
+            <div class="item-container" id="3">
+            <div class="card-item">
+                <img src="/images/mixvegpratha.jpg" alt="img" id="card-img">
+                <p id="item-name">Mix Veg Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;60 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;120 (2-Piece)</h3>            
+        </div>
+        <div class="item-container" id="4">
+            <div class="card-item">
+                <img src="/images/aloopyaz.webp" alt="img" id="card-img">
+                <p id="item-name">Aloo Pyaz</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>              
+        </div>
+        <div class="item-container" id="5">
+            <div class="card-item">
+                <img src="/images/aloogobhi.jpg" alt="img" id="card-img">
+                <p id="item-name">Aloo Gobi</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="6">
+            <div class="card-item">
+                <img src="images/aloo matar.jpg" alt="img" id="card-img">
+                <p id="item-name">Aloo Mutter</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="7">
+            <div class="card-item">
+                <img src="/images/aloogobhi.jpg" alt="img" id="card-img">
+                <p id="item-name">Aloo Ginger</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="8">
+            <div class="card-item">
+                <img src="/images/aloomushroom.jpg" alt="img" id="card-img">
+                <p id="item-name">Aloo Mushroom</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;50 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;120 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="9">
+            <div class="card-item">
+                <img src="images/aloo methi.jpg" alt="img" id="card-img">
+                <p id="item-name">Aloo Methi</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="10">
+            <div class="card-item">
+                <img src="/images/gobiparatha.webp" alt="img" id="card-img">
+                <p id="item-name">Gobi Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>               
+        </div>
+        <div class="item-container" id="11">
+            <div class="card-item">
+                <img src="images/peas paratha.jpg" alt="img" id="card-img">
+                <p id="item-name">Green Peas Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="12">
+            <div class="card-item">
+                <img src="images/Sattu Parata.jpeg" alt="img" id="card-img">
+                <p id="item-name">Sattu Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="13">
+            <div class="card-item">
+                <img src="images/Phudina_Paratha.jpeg" alt="img" id="card-img">
+                <p id="item-name">Mint Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="14">
+            <div class="card-item">
+                <img src="images/carrot paratha.JPG" alt="img" id="card-img">
+                <p id="item-name">Carrot Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>                
+        </div>
+        <div class="item-container" id="15">
+            <div class="card-item">
+                <img src="images/aloo palak.jpg" alt="img" id="card-img">
+                <p id="item-name">Aloo Palak</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;52.5 (1-Piece)</h3>
+            <h3 id="item-price">Price : &#x20b9;105 (2-Piece)</h3>               
+        </div>
+        <div class="item-container" id="16">
+            <div class="card-item">
+                <img src="images/phulka.jpg" alt="img" id="card-img">
+                <p id="item-name">Phulka</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;12</h3>               
+        </div>
+        <div class="item-container" id="17">
+            <div class="card-item">
+                <img src="images/phulka with ghee.jpg" alt="img" id="card-img">
+                <p id="item-name">Phulka with ghee</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;15</h3>               
+        </div>
+        <div class="item-container" id="18">
+            <div class="card-item">
+                <img src="images/butter phulka.jpg" alt="img" id="card-img">
+                <p id="item-name">butter phulka</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;15</h3>               
+        </div>
+        <div class="item-container" id="19">
+            <div class="card-item">
+                <img src="/images/plainparatha.jpg" alt="img" id="card-img">
+                <p id="item-name">Plain Parata</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;15</h3>               
+        </div>
+        <div class="item-container" id="20">
+            <div class="card-item">
+                <img src="images/Veg Roll .jpeg" alt="img" id="card-img">
+                <p id="item-name">Veg Roll</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;75</h3>               
+        </div>
+        <div class="item-container" id="21">
+            <div class="card-item">
+                <img src="images/paneer roll.jpg" alt="img" id="card-img">
+                <p id="item-name">Panneer Roll</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : &#x20b9;105</h3>               
+        </div>
+    </div>
+</section><!-- <section class="categories">
+    <div class="title-container">
+        <h1 id="title">juice</h1>
+       
+    </div>
+    <div class="card">
+        <div class="item-container" id="0">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>               
+        </div>
+
+        <div class="item-container" id="1">
+            <div class="card-item" >
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name">name1</p>              
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>
+        </div>
+
+        <div class="item-container" id="2">
+            <div class="card-item" >
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name">name2</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>                
+        </div>
+
+        <div class="item-container" id="3">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name">name3</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+        <div class="item-container" id="0">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>               
+        </div>
+
+    </div>
+</section> -->
+
+<!-- Redmi phones -->
+<!-- <section class="categories">
+    <div class="title-container">
+        <h1 id="title">Chicken Item</h1>
+        
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="4">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name">name1`</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price :</h3>            
+        </div>
+
+        <div class="item-container"  id="5">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name">name2</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container"  id="6">
+
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name">name3</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+        <div class="item-container"  id="7">
+
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name">name3</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+        
+
+        
+</div>
+</section> -->
+<!-- end of Redmi phones --> 
+
+<!-- Realme Phones -->
+<!-- <section class="categories">
+    <div class="title-container">
+        <h1 id="title">rice Item</h1>
+        
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="8">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container" id="9">
+
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price :</h3>            
+        </div>
+
+        <div class="item-container" id="10">
+
+            <div class="card-item">
+                <img src="/images/realme7i.jpg" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container" id="11">
+
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+        <div class="item-container" id="8">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+        <div class="item-container" id="8">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+        <div class="item-container" id="8">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+        <div class="item-container" id="8">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+    </div>
+</section> -->
+<!-- end of realme phones -->
+
+<!-- Oppo Phones -->
+<!--<section class="categories">
+    <div class="title-container">
+        <h1 id="title">landa items</h1>
+        
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="12">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container" id="13">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container" id="14">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container" id="15">
+            <div class="card-item">
+                <img src="/images/oppoA15.jpg" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+    </div>
+</section> -->
+<!-- end of oppo phones -->
+
+<!-- samsung Phones -->
+<!--<section class="categories">
+    <div class="title-container">
+        <h1 id="title">Fuck u item</h1>
+        
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="16">
+
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container" id="17">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container" id="18">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+        <div class="item-container" id="19">
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+        <div class="item-container" id="16">
+
+            <div class="card-item">
+                <img src="/images/" alt="img" id="card-img">
+                <p id="item-name"></p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : </h3>            
+        </div>
+
+    </div>
+</section> --> 
+<!-- end of samsung phones -->
+
+<!-- Footer section -->
+    <footer>
+        <p id="footer-title">About US</h3p>
+        <div class="footer">
+            <div class="support">
+                <ul>
+                    <h3>Know About Us</h3>
+                    <li><a href="#" id="about">Know Us</a></li>
+                    <li><a href="#" id="Refund-policy">Refund Policy</a></li>
+                    <li><a href="#" id="policy">Our Policy</a></li>
+                    <li><a href="#" id="return-product">How to Return ?</a></li>
+                    <li><a href="#" id="terms">Term & Conditios</a></li>
+                    <li><a href="#" id="privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="social-media">
+
+                <ul>
+                    <h3>Contact Us</h3>
+                    <li><i class="fa fa-facebook"></i><a href="#" id="facebook">Facebook</a></li>
+                    <li><i class="fa fa-twitter"></i><a href="#" id="twitter">Twitter</a></li>
+                    <li><i class="fa fa-instagram"></i><a href="#" id="facebook">Instagram</a></li>
+                    <li><i class="fa fa-telegram"></i><a href="#" id="facebook">Telegram</a></li>
+                </ul>
+            </div>
+
+            <div class="address">
+                <h3>Office Address</h3>
+                <p></p>
+                <p></p>
+                <p>Karnatka,India</p>
+                <p>Phone No : </p>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>&#169 : 2023<a href="www.techorzominds.com"></a> All Rights Reserved</p>
+        </div>
+    </footer>
+<!-- end of footer section -->
+
+</main>
+<!-- end of main -->
+
+
+<!-- details page section -->
+<div id="details-page">
+    <div class="details">
+        <div class="items-detail">
+            <div class="image-container">
+                <img src="/images/" alt="" id="details-img">
+            </div>
+            <div class="details-card">
+                <h2 id="detail-title"></h2>
+                <h4 id="detail-price">Price : </h4>
+                <p id="you-save">You save : </p>
+                <p id="delievery"><strong>Delivery : </strong> In 3 - 4 days</p>
+                <p id="spec"><strong>Specification :</strong>
+
+                    <ul>
+                        <li></li>
+
+                        <li></li>
+
+                        <li></li>
+                    </ul>
+                </p>
+                <button id="carts">Add to Cart</button>
+                <button id="buy">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of page detail -->
+
+
+<!-- cart list section -->
+<div id="cart-container">
+    <p id="cart-title">Your <strong>Cart</strong></p id="cart-title">
+    <div id="empty-cart">
+        <h1>Your Cart is Empty...</h1>
+    </div>
+
+    <div id="cart-with-items">
+        <div class="cart-column">
+            <h3>Product</h3>
+            <h3>Product Name</h3>
+            <h3>Total </h3>
+            <h3>Quantity</h3>
+            <h3>Remove</h3>
+        </div>
+        <div id="item-body">
+        </div>
+        <div id="total">
+            <h3 id="total-items"></h3>
+            <h2 id="total-amount"></h2>
+            <h3 id="you-saved"></h3>
+        </div>
+    </div>
+</div>
+<script src="cartfile.js"></script>
+</body>
+</html>

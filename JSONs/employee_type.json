@@ -1,0 +1,8 @@
+{
+    "Employee Type" : {
+        "state" : [
+            "staff",
+            "cook"
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+
+.imgg{
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+.container{
+    margin: auto;
+    margin-top: 20px;
+    /* border: 3px solid black; */
+   //* background-image: url("img/background.jpg");*/
+}
+.col-md-, .col-lg-4{
+    margin-bottom: 20px;
+}
+.sty{
+    font-size: 18px !important;
+    color: black !important;
+}
+.num{
+    width: 80px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+.uk-border-circle{
+    width: 100px !important;
+    height: 100px !important;
+}
+.fa-cart-arrow-down{
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.pay{
+    padding-left: 600px;
+}

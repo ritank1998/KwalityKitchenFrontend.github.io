@@ -1,0 +1,30 @@
+{
+    "default" : [
+        "<website>/api/v1/",
+        "techorzomind.com/api/v1/"
+    ],
+
+    "customer" : {
+        "Default" : ["<website>/api/v1/customer"],
+
+          "POST" :  [ "/token={token}/add/"],
+
+          "GET" : [
+            "/token={token}/get/all",
+             "/get/id={id}"
+            ]
+    },
+    
+    "login" : {
+        "default" : [
+            "/api/v1/cred"
+        ],
+        "POST" : [
+            "/token={token}/add"
+        ],
+        "GET" : [
+            "/token={token}/get/id={id}",
+            "/token={token}/get/name={name}"
+        ]
+    }
+}
