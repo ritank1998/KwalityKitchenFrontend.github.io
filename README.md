@@ -9,3 +9,7 @@ This can be run using the NPM (Node package manager ).
 Kindly run npm install before using this on the local server.
 
 Certain Images Like in the menucard , and those which are exclusively given to us by the clients are not availablle , So the image icon on the fronend on certain places may appear , Kindly add you own pictures (If Needed).
+
+
+
+This can be viewed here "https://ritank1998.github.io/KwalityKitchenFrontend.github.io/"
